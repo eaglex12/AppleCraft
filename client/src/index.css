@@ -1,0 +1,262 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.bg-color {
+  background: linear-gradient(155deg, #383638 2.06%, #0b0b0b 33.08%);
+}
+
+.bg-color-rev {
+  background: linear-gradient(-15deg, #383638 2.06%, #0b0b0b 33.08%);
+}
+
+.bg-color-two-side {
+  background: linear-gradient(
+    127deg,
+    #383638 3.9%,
+    #0b0b0b 28.86%,
+    #0b0b0b 70.57%,
+    #383638 96.6%
+  );
+}
+
+.btn-blue {
+  @apply bg-blue-600 px-3 lg:px-12 py-3 rounded-lg hover:bg-blue-700;
+}
+.btn-blue-no-pad {
+  @apply bg-blue-600 rounded-lg hover:bg-blue-700;
+}
+
+.btn-red {
+  @apply bg-red-500 px-3 lg:px-12 py-3 rounded-lg hover:bg-red-600 active:bg-red-700;
+}
+.btn-red-no-pad {
+  @apply bg-red-500 rounded-lg hover:bg-red-600 active:bg-red-700;
+}
+
+.btn-blue-border {
+  @apply border-2 text-blue-600 hover:text-blue-200 uppercase text-sm border-blue-600 px-5 font-semibold lg:px-12 py-3 rounded-lg hover:bg-blue-700;
+}
+.btn-red-border {
+  @apply border-2 text-red-500 hover:text-red-200 uppercase text-sm border-red-500 px-5 font-semibold lg:px-12 py-3 rounded-lg hover:bg-red-500;
+}
+
+.xy-center {
+  @apply flex justify-between items-center;
+}
+
+.navbar-p {
+  @apply text-blue-900 text-[.7em] font-[800] uppercase mb-6;
+}
+
+.navbar-li {
+  @apply font-semibold hover:text-gray-500 cursor-pointer;
+}
+
+.navbar-span {
+  @apply p-2 lg:p-3 border border-gray-500 rounded-full hover:bg-white hover:text-gray-500 cursor-pointer;
+}
+
+.navbar-drop-ul {
+  @apply hover:text-blue-400 hover:bg-gray-200 flex items-center gap-2 p-3;
+}
+
+.contact-li {
+  @apply flex gap-5 my-5 lg:my-14 text-gray-400;
+}
+
+.contact-input {
+  @apply border border-gray-300 w-full rounded-md py-2 px-4 my-2 lg:mb-8;
+}
+
+.about-h1 {
+  @apply text-2xl my-5 lg:mt-20 font-semibold;
+}
+
+.about-social {
+  @apply p-3 border cursor-pointer border-gray-400 rounded-full mr-5 lg:mr-0 lg:mb-5 hover:bg-gray-400 hover:text-white;
+}
+
+.side-nav-link-sp {
+  @apply flex px-3 py-2 rounded items-center gap-4 active:bg-gray-200 hover:text-blue-600 hover:bg-gray-300;
+}
+
+.side-nav-sub-title {
+  @apply uppercase text-xs font-normal py-1;
+}
+
+/* Sign UP page */
+
+.sign-up-input {
+  @apply border-t border-b border-e bg-white border-gray-200 p-2 rounded-e-lg outline-none;
+}
+.sign-up-input-y {
+  @apply border-t border-b bg-white border-gray-200 p-2 outline-none;
+}
+
+.sign-up-icon {
+  @apply bg-white p-3 border-s border-t border-b border-gray-200 rounded-s-lg outline-none;
+}
+.sign-up-icon-rev {
+  @apply bg-white p-3 border-e border-t border-b border-gray-200 rounded-e-lg outline-none;
+}
+
+/* Navbar elements active state */
+
+.active {
+  @apply bg-gray-200 text-blue-500  rounded;
+}
+
+/* Hiding Scrollbar */
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+/* Custom input file */
+
+.custom-file-input {
+  display: inline-block;
+}
+
+.custom-file-input input[type="file"] {
+  display: none;
+}
+
+/* Admin Page */
+
+.admin-button-fl {
+  @apply flex items-center gap-2 p-2 rounded-lg;
+}
+
+.admin-status {
+  @apply px-2 py-1 hover:bg-gray-100 hover:rounded-md cursor-pointer;
+}
+
+.admin-label {
+  @apply text-sm mt-2 font-semibold text-gray-700;
+}
+
+.admin-input {
+  @apply w-full bg-gray-100 rounded-md mt-2 py-2 px-3 text-sm outline-none border border-gray-200;
+}
+
+.admin-input-no-m {
+  @apply bg-gray-100 rounded-md py-2 px-3 text-sm outline-none border border-gray-200;
+}
+
+.admin-div {
+  @apply bg-white p-5 rounded-lg mb-5;
+}
+
+.admin-table-head {
+  @apply font-semibold p-4 text-left;
+}
+
+.admin-table-row {
+  @apply text-sm p-4;
+}
+
+/* User Page */
+
+.category-li {
+  @apply text-sm hover:text-blue-600 cursor-pointer my-3;
+}
+
+.description-ul {
+  @apply flex items-center gap-2 py-1;
+}
+
+.cart-total-li {
+  @apply flex justify-between my-2;
+}
+
+.cart-total-li-first {
+  @apply text-sm font-semibold text-gray-500;
+}
+
+.cart-total-li-second {
+  @apply font-semibold text-sm;
+}
+
+.cart-table-header {
+  @apply text-left font-normal text-sm text-gray-500 px-5 py-2;
+}
+
+.cart-table-row {
+  @apply text-sm px-5 py-2;
+}
+
+/* Checkout */
+
+.inputType {
+  @apply border bg-white border-gray-200 px-3 py-2 rounded outline-none;
+}
+
+/* Order Admin */
+
+.tile {
+  @apply bg-white rounded-lg p-5 font-semibold lg:w-1/3;
+}
+
+.tile-row {
+  @apply flex items-center py-2 gap-3;
+}
+
+.tile-row-icon {
+  @apply p-3 bg-gray-100 rounded-full text-xl text-gray-500;
+}
+
+/* Dashboard */
+
+.dashboard-link {
+  @apply text-blue-400 font-semibold hover:underline;
+}
+
+/* Custom styles for the arrow marks */
+.slick-prev,
+.slick-next {
+  font-size: 24px;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 40px;
+  height: 40px;
+  padding-top: 3px;
+  border-radius: 50%;
+  z-index: 10;
+}
+
+/* Hover effect for the arrows */
+.slick-prev:hover,
+.slick-next:hover {
+  background-color: rgba(0, 0, 0, 0.8); /* Darker background on hover */
+}
+
+/* Admin side bar animation left - right scroll */
+
+.side-navbar-admin {
+  transition: transform 0.3s ease-in-out; /* Animation transition property */
+  transform: translateX(-100%); /* Initially move the sidebar off-screen */
+}
+
+.side-navbar-admin.show {
+  transform: translateX(
+    0
+  ); /* Move the sidebar back on-screen when the 'show' class is applied */
+}
+
+/* Pagination  */
+
+.pagination {
+  @apply flex items-center justify-center border-2 w-7 h-7 rounded-full cursor-pointer text-sm border-gray-400 hover:border-gray-800 hover:text-gray-800 active:text-black;
+}
+.pagination-active {
+  @apply flex items-center justify-center border-2 w-7 h-7 rounded-full cursor-pointer text-sm border-blue-500 bg-blue-500 hover:border-blue-800 hover:bg-blue-800 text-white active:text-black;
+}
+.pagination-arrows {
+  @apply flex items-center justify-center border-2 w-7 h-7 rounded-full cursor-pointer border-blue-500 hover:border-blue-800 text-blue-500 hover:text-blue-800;
+}
