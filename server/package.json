@@ -28,6 +28,7 @@
     "nodemailer": "^6.9.7",
     "pdfkit": "^0.14.0",
     "razorpay": "^2.9.2",
+    "server": "file:",
     "uuid": "^9.0.1",
     "validator": "^13.11.0"
   }
