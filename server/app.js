@@ -14,6 +14,7 @@ app.use(express.urlencoded({ extended: true }));
 // Setting up cors
 const allowedOrigins = [
 	"http://applecraftfrontend.s3-website.ap-south-1.amazonaws.com/",
+	"http://localhost:5173",
 ];
 const corsOptions = {
 	credentials: true,
